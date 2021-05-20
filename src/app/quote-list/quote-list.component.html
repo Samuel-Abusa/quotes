@@ -1,0 +1,9 @@
+<div class="container">
+  <ul class="card">
+    <li *ngFor="let list of lists" class="card-body">
+      {{ list.userName }}
+      <app-quote-description [quoteDetails]="list"></app-quote-description>
+      <app-upvote></app-upvote>
+    </li>
+  </ul>
+</div>

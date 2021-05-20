@@ -1,0 +1,19 @@
+<div class="votes">
+  <div class="up">
+    <p style="display: inline-block; color: blue">{{ upVoteCount }}</p>
+    <i
+      class="bi bi-hand-thumbs-up"
+      style="font-size: 17px; color: blue"
+      (click)="upVote()"
+    ></i>
+  </div>
+
+  <div class="down">
+    <p style="display: inline-block; color: red">{{ downVoteCount }}</p>
+    <i
+      class="bi bi-hand-thumbs-down"
+      style="font-size: 17px; color: red"
+      (click)="downVote()"
+    ></i>
+  </div>
+</div>
