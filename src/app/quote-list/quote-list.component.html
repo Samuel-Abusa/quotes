@@ -4,6 +4,8 @@
       {{ list.userName }}
       <app-quote-description [quoteDetails]="list"></app-quote-description>
       <app-upvote></app-upvote>
+      <button (click)="showDetails()">Details</button>
+      <app-quote-details [hidden]="showDetailsDiv"></app-quote-details>
     </li>
   </ul>
 </div>

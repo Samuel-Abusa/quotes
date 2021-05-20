@@ -1,0 +1,31 @@
+<div class="container">
+  <app-quote-display [showUserQuote]="quotes"></app-quote-display>
+  <form
+    action=""
+    #quoteForm="ngForm"
+    (ngSubmit)="onClickSubmit(quoteForm.value)"
+  >
+    <div class="form-group">
+      <label for="name">Your name</label> <br />
+      <input type="text" name="name" id="name" required ngModel />
+    </div>
+
+    <div class="form-group">
+      <label for="quote">Quote</label>
+      <textarea
+        name="quote"
+        id="quote"
+        cols="30"
+        rows="10"
+        class="form-control"
+        ngModel
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <label for="author">Author</label> <br />
+      <input type="text" name="author" id="author" ngModel /> <br />
+      <br />
+      <input type="submit" value="Submit your Quote" />
+    </div>
+  </form>
+</div>

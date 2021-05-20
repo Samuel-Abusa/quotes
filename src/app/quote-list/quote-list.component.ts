@@ -31,6 +31,10 @@ export class QuoteListComponent implements OnInit {
     },
   ];
 
+  showDetailsDiv = true;
+  showDetails() {
+    this.showDetailsDiv = !this.showDetailsDiv;
+  }
   constructor() {}
 
   ngOnInit(): void {}
